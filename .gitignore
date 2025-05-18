@@ -21,3 +21,4 @@
 
 *.run.xml
 .trunk\
+.DS_STORE

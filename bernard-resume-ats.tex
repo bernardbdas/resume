@@ -1,0 +1,160 @@
+\documentclass[letterpaper,10pt]{article}
+% Essential packages only
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\footskip}{3.60004pt}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[default]{sourcesanspro}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% General formatting
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Highlight color
+\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00}
+\sethlcolor{lightyellow}
+
+%--------------- Custom commands -----------------------
+\newcommand{\sectionspace}{\vspace{-20pt}}
+\newcommand{\subheadingtitlevspace}{\vspace{-3pt}}
+\newcommand{\resumeItem}[1]{\item{#1 \vspace{-4pt}}}
+\newcommand{\titleItem}[1]{\textbf{#1}}
+\newcommand{\highlight}[1]{\textsl{\textbf{#1}}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
+      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
+    \end{tabular*}\vspace{-10pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        #1 & \textit{ #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------
+
+\begin{document}
+
+% ----------HEADING---------------------
+\begin{flushleft}
+    \textbf{\huge Bernard Birendra Das} \\
+    \textit{Kolkata, West Bengal} $|$
+    \textit{(+91) 798-000-3127} $|$
+    \href{https://berniespace.dev}{{\textit{@website}}} $|$
+    \href{mailto:bernardbdas@gmail.com}{{\textit{@mail}}} $|$
+    \href{https://linkedin.com/in/bernardbdas}{{\textit{@linkedin}}} $|$
+    \href{https://github.com/bernardbdas}{{\textit{@github}}}
+    \vspace{-8pt}
+\end{flushleft}
+
+% ---------- PROFESSIONAL SUMMARY ------
+\section{Professional Summary}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{Versatile developer with a Master's in Computer Science, distinguished for collaborative skills and a track record of independently delivering impactful results. Ample experience in full-stack development, delivering well-documented, tested, and operable code. Efficient in collaborating and communicating new ideas and opinions.}
+\end{itemize}
+\sectionspace
+
+% ---------- AWARDS AND CERTIFICATIONS ------
+\section{Awards and Certifications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\href{https://www.freecodecamp.org/certification/bernardbdas/foundational-c-sharp-with-microsoft}{\titleItem{Foundational C\# with Microsoft Developer Certification}}}{September 2023}
+        \resumeProjectHeading{\href{https://www.credly.com/badges/bdf2f146-b8c1-4cc0-b3df-81980f4df784}{\titleItem{AWS Academy Graduate - AWS Academy Cloud Foundations}}}{November 2022}
+    \resumeSubHeadingListEnd
+
+% ---------- TECHNICAL SKILLS ------------
+\section{Technical Skills}
+\subheadingtitlevspace
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{\titleItem{Languages}{: JavaScript, LaTeX, Python, Java, C\#, C/C++, SQL (Postgres, MS-SQL, MySQL)} \\
+    \titleItem{Frameworks}{: MERN, MEAN, MEVN, Svelte, Remix, SolidJS, Django, Flask, React Native} \\
+    \titleItem{DevOps and API Tools}{: Git, Docker, OpenShift, Kubernetes, Azure DevOps, Swagger, Postman} \\
+    \titleItem{Data Analytics Tools}{: PowerBI, R, TensorFlow, PyTorch, Pandas, Polars, Numpy, Scikit-learn, Prophet, Matplotlib, Seaborn, Plotly, MLFlow, Apache Airflow} \\
+    \titleItem{Machine Learning Tools}{: TensorFlow, PyTorch, Scikit-learn, Prophet, ARIMA/SARIMA, MLFlow, Apache Airflow, Apache Spark, Dask, Kubeflow, Google Cloud AI} \\
+    \titleItem{Others}{: Data Modeling, Agile (Scrum/Kanban), SOLID, Design Patterns,  Debugging, Root Cause Analysis}}
+\end{itemize}
+\sectionspace
+
+% ---------- EXPERIENCE ------------------
+\section{Experience}
+
+\resumeSubHeadingListStart
+\resumeProjectHeading{\titleItem{Software Developer} $|$ \emph{Simplify3x Software Private Limited} $|$ \textbf{2 yrs 5 mos}}{January 2023 -- May 2025} 
+    \resumeItemListStart
+        \resumeItem{Worked on the core product team of SimplifyQA product as a feature owner for PDF Reports and Pipeline Executions modules.}
+        \resumeItem{Designed and implemented RESTful APIs and microservices in Node.js, significantly reducing service response times and improving overall system scalability.}
+        \resumeItem{Developed dynamic, data-driven dashboards using Angular and D3.js, enabling real‑time visualization of key performance metrics for business stakeholders.}
+        \resumeItem{Collaborated with product owners, QA engineers, and DevOps to establish a CI/CD pipeline on Azure DevOps, cutting deployment times from hours to minutes.}
+        \resumeItem{Mentored two junior developers through code reviews and pair‑programming sessions, fostering best practices and accelerating feature delivery.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% ---------- EDUCATION -------------------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading{CHRIST (Deemed to be University), Bangalore}{CGPA : --}{PhD in Data Science}{December 2024 -- present}
+    \resumeSubheading{CHRIST (Deemed to be University), Bangalore}{CGPA : 8.66}{Master of Computer Applications (MCA)}{June 2021 -- June 2023}
+    \resumeSubheading{St. Xavier's College (Autonomous), Kolkata}{CGPA : 7.20}{Bachelor of Computer Science Honours}{June 2018 -- June 2021}
+    % \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.12}{ISC}{June 2016 -- June 2018} 
+    % \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.64}{ICSE}{June 2004 -- June 2016}
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+% ---------- PROJECTS --------------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\titleItem{Project 1} $|$ \emph{Django, IBM Cloud, SQLite, Function-as-a-Service, Kubernetes, OpenShift}}{Nov 2023}
+      \resumeItemListStart
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor.}
+        \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\titleItem{Project 2} $|$ \emph{Python, numpy. D3.js}}{Spring 2022}
+      \resumeItemListStart
+        \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\titleItem{Project 3} $|$ \emph{\LaTeX}}{November 2021}
+      \resumeItemListStart
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
