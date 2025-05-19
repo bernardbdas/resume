@@ -14,6 +14,7 @@
 \usepackage{soul}
 \usepackage[margin=0.5in]{geometry}
 \usepackage[default]{sourcesanspro}
+\usepackage{subfiles}
 
 % Page style
 \pagestyle{fancy}
@@ -100,17 +101,10 @@
     \resumeSubHeadingListEnd
 
 % ---------- TECHNICAL SKILLS ------------
-\section{Technical Skills}
-\subheadingtitlevspace
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \item{\titleItem{Languages}{: JavaScript, LaTeX, Python, Java, C\#, C/C++, SQL (Postgres, MS-SQL, MySQL)} \\
-    \titleItem{Frameworks}{: MERN, MEAN, MEVN, Svelte, Remix, SolidJS, NestJS, Spring Boot, Encore, Django, Flask, React Native} \\
-    \titleItem{DevOps and API Tools}{: Git, Docker, OpenShift, Kubernetes, Azure DevOps, Swagger, Postman} \\
-    \titleItem{Data Analytics Tools}{: PowerBI, R, TensorFlow, PyTorch, Pandas, Polars, Numpy, Scikit-learn, Prophet, Matplotlib, Seaborn, Plotly, MLFlow, Apache Airflow} \\
-    \titleItem{Machine Learning Tools}{: TensorFlow, PyTorch, Scikit-learn, Prophet, ARIMA/SARIMA, MLFlow, Apache Airflow, Apache Spark, Dask, Kubeflow, Google Cloud AI} \\
-    \titleItem{Others}{: Data Modeling, Agile (Scrum/Kanban), SOLID, Design Patterns,  Debugging, Root Cause Analysis}}
-\end{itemize}
-\sectionspace
+
+\subfile{sections/data-science-skills.tex}
+\subfile{sections/fullstack-webdev-skills.tex}
+\subfile{sections/devops-skills.tex}
 
 % ---------- EXPERIENCE ------------------
 \section{Experience}
