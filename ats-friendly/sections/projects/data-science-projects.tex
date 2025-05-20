@@ -3,41 +3,77 @@
 
 \section{Projects}
     \resumeSubHeadingListStart%
-        \resumeProjectHeading{\titleItem{End-to-End ML Pipeline with MLOps} $|$ \emph{Kubernetes, MLflow, Airflow, Docker, AWS, FastAPI}}{2024}
+
+        \resumeProjectHeading{\titleItem{Interactive Data Catalog} $|$ \emph{Next.js, Apache Superset, Node.js}}{2025}
             \resumeItemListStart%
-                \resumeItem{Designed and deployed a scalable machine learning pipeline for tabular data, automating data ingestion, model training, and deployment using Airflow, MLflow, and Docker on AWS EKS.}
-                \resumeItem{Implemented CI/CD for model retraining and versioning, with automated monitoring and rollback using MLflow and Kubernetes.}
+                \resumeItem{Built an interactive data catalog web application using Next.js for UI and integrated Apache Superset via embedded dashboards for dataset exploration.}
+                \resumeItem{Developed Node.js microservices to retrieve metadata and execute SQL queries, enabling users to browse, filter, and preview datasets seamlessly.}
+                \resumeItem{Implemented access controls and audit logging with Keycloak and PostgreSQL for secure data governance.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{LLM Fine-Tuning and Deployment} $|$ \emph{Hugging Face, Transformers, FastAPI, Streamlit, GCP}}{2024}
+
+        \resumeProjectHeading{\titleItem{Swarm Simulation Visualization} $|$ \emph{SvelteKit, Three.js, Python FastAPI}}{2025}
             \resumeItemListStart%
-                \resumeItem{Fine-tuned open-source LLMs (e.g., Llama 2, Falcon) on domain-specific datasets using Hugging Face Transformers and deployed as RESTful APIs with FastAPI.}
-                \resumeItem{Built an interactive Streamlit app for real-time inference and integrated with GCP Vertex AI for scalable serving.}
+                \resumeItem{Designed a 3D WebGL-based UI with Three.js and SvelteKit to visualize real-time drone route optimizations from spatio-temporal datasets.}
+                \resumeItem{Created FastAPI endpoints to stream simulation data and control parameters, enabling users to manipulate swarm behavior on-the-fly.}
+                \resumeItem{Added performance metrics overlays and animation controls with integration to D3.js charts for detailed analysis.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{Real-Time Data Analytics Platform} $|$ \emph{Kafka, Spark, Snowflake, Power BI}}{2023}
+
+        \resumeProjectHeading{\titleItem{MLOps Dashboard} $|$ \emph{Next.js, MLflow, Docker, GitHub Actions}}{2025}
             \resumeItemListStart%
-                \resumeItem{Developed a real-time analytics platform for streaming financial data using Apache Kafka and Spark Structured Streaming.}
-                \resumeItem{Automated ETL pipelines to Snowflake and built interactive dashboards in Power BI for business insights.}
+                \resumeItem{Developed a full-stack MLOps dashboard using Next.js that interfaces with MLflow’s REST API to display experiment runs, metrics, and model versions.}
+                \resumeItem{Containerized the dashboard with Docker and deployed via GitHub Actions on a Kubernetes cluster, enabling automated updates on new experiments.}
+                \resumeItem{Integrated Prometheus for resource monitoring and set up alerts via Slack webhook for experiment failures.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{Computer Vision for Defect Detection} $|$ \emph{PyTorch, OpenCV, TensorFlow, AWS Sagemaker}}{2023}
+
+        \resumeProjectHeading{\titleItem{End-to-End ML Pipeline with MLOps} $|$ \emph{Kubernetes, MLflow, Airflow, Docker, FastAPI, Next.js, Grafana}}{2024}
             \resumeItemListStart%
-                \resumeItem{Built and deployed deep learning models for automated defect detection in manufacturing images, achieving 95\%+ accuracy.}
-                \resumeItem{Leveraged AWS Sagemaker for scalable training and inference, and OpenCV for image preprocessing.}
+                \resumeItem{Designed and deployed a scalable machine learning pipeline for tabular data, automating data ingestion, model training, and deployment using Airflow, MLflow, and Docker on a Kubernetes cluster.}
+                \resumeItem{Implemented CI/CD for model retraining and versioning with GitHub Actions, automated monitoring, drift detection, and rollback via MLflow and Grafana dashboards.}
+                \resumeItem{Built a Next.js frontend dashboard for real-time pipeline metrics and error tracking, integrating FastAPI endpoints for live inference.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{Recommendation System at Scale} $|$ \emph{BigQuery, TensorFlow, Scikit-learn, Flask API}}{2022}
+
+        \resumeProjectHeading{\titleItem{LLM Fine-Tuning and Deployment} $|$ \emph{Hugging Face Transformers, FastAPI, SvelteKit, Qdrant}}{2024}
             \resumeItemListStart%
-                \resumeItem{Engineered a collaborative filtering and content-based recommendation engine for e-commerce, processing millions of records in Google BigQuery.}
-                \resumeItem{Served recommendations via a Flask API and monitored performance with custom analytics.}
+                \resumeItem{Fine-tuned open-source LLMs (e.g., Llama 2, Falcon) on domain-specific datasets using Hugging Face Transformers and managed experiments with MLflow.}
+                \resumeItem{Deployed inference microservices via FastAPI, orchestrated on Kubernetes, and served vector search through Qdrant for semantic retrieval.}
+                \resumeItem{Developed a SvelteKit web app with interactive chat interface and integrated streaming responses for real-time user interactions.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{Time Series Forecasting for Business} $|$ \emph{Prophet, ARIMA, DVC, Azure ML}}{2022}
+
+        \resumeProjectHeading{\titleItem{Real-Time Data Analytics Platform} $|$ \emph{Kafka, Spark, Apache Druid, Apache Superset, Remix}}{2023}
             \resumeItemListStart%
-                \resumeItem{Implemented time series forecasting models (Prophet, ARIMA) for sales and demand prediction, with experiment tracking using DVC.}
-                \resumeItem{Deployed models to Azure ML for automated retraining and reporting.}
+                \resumeItem{Engineered a real-time analytics platform for streaming financial data using Apache Kafka and Spark Structured Streaming.}
+                \resumeItem{Automated ETL pipelines into Apache Druid for low-latency OLAP queries and built interactive Remix dashboards embedded via Superset for business insights.}
+                \resumeItem{Set up alerting and performance monitoring using Grafana and Prometheus to ensure SLA compliance.}
             \resumeItemListEnd%
-        \resumeProjectHeading{\titleItem{NLP Pipeline for Sentiment Analysis} $|$ \emph{spaCy, NLTK, BERT, GCP Vertex AI}}{2021}
+
+        \resumeProjectHeading{\titleItem{Computer Vision for Defect Detection} $|$ \emph{PyTorch, OpenCV, TorchServe, Next.js}}{2023}
             \resumeItemListStart%
-                \resumeItem{Developed an end-to-end NLP pipeline for sentiment analysis on social media data, leveraging spaCy, NLTK, and BERT embeddings.}
-                \resumeItem{Deployed scalable inference on GCP Vertex AI and visualized results with custom dashboards.}
+                \resumeItem{Built and deployed deep learning models for automated defect detection in manufacturing images (95\%+ accuracy) using PyTorch and OpenCV preprocessing.}
+                \resumeItem{Served models with TorchServe on Kubernetes, enabling scalable, low-latency inference.}
+                \resumeItem{Created a Next.js frontend for image uploads and real-time bounding-box overlay visualization, using WebSockets for live updates.}
             \resumeItemListEnd%
+
+        \resumeProjectHeading{\titleItem{Recommendation System at Scale} $|$ \emph{Presto, TensorFlow, Flask, Vite + Vue 3}}{2022}
+            \resumeItemListStart%
+                \resumeItem{Designed a hybrid collaborative filtering and content-based recommendation engine on large-scale datasets using Presto and TensorFlow.}
+                \resumeItem{Exposed recommendations via a Flask API, deployed on Docker and Kubernetes with experiment tracking in MLflow.}
+                \resumeItem{Launched a Vite + Vue 3 web app showcasing dynamic product feeds and conducting A/B tests through feature flags.}
+            \resumeItemListEnd%
+
+        \resumeProjectHeading{\titleItem{Time Series Forecasting for Business} $|$ \emph{Prophet, ARIMA, DVC, Grafana, Dot NET Core Web API}}{2022}
+            \resumeItemListStart%
+                \resumeItem{Implemented time series forecasting models (Prophet, ARIMA) for sales and demand prediction with versioning and reproducibility via DVC.}
+                \resumeItem{Deployed forecasting services as a Dot NET Core Web API on Docker, enabling scheduled retraining.}
+                \resumeItem{Visualized forecast outputs and scenario analyses in Grafana dashboards with interactive time sliders.}
+            \resumeItemListEnd%
+
+        \resumeProjectHeading{\titleItem{NLP Pipeline for Sentiment Analysis} $|$ \emph{spaCy, NLTK, BERT, Meilisearch, Remix}}{2021}
+            \resumeItemListStart%
+                \resumeItem{Developed an end-to-end NLP pipeline leveraging spaCy, NLTK, and BERT embeddings for social media sentiment analysis.}
+                \resumeItem{Indexed processed texts in Meilisearch for full-text search and built REST endpoints with FastAPI.}
+                \resumeItem{Created a Remix-based frontend displaying sentiment trends and allowing custom query filters with real-time updates.}
+            \resumeItemListEnd%
+
     \resumeSubHeadingListEnd%
 
 \end{document}

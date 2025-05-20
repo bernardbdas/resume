@@ -1,71 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
-% Essential packages only
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\setlength{\footskip}{3.60004pt}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{amsmath}
-\usepackage{soul}
-\usepackage[margin=0.5in]{geometry}
-\usepackage[default]{sourcesanspro}
-\usepackage{subfiles}
-
-% Page style
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% General formatting
-\urlstyle{same}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Section formatting
-\titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
-
-% Highlight color
-\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00}
-\sethlcolor{lightyellow}
-
-%--------------- Custom commands -----------------------
-\newcommand{\sectionspace}{\vspace{-20pt}}
-\newcommand{\subheadingtitlevspace}{\vspace{-3pt}}
-\newcommand{\resumeItem}[1]{\item{#1 \vspace{-4pt}}}
-\newcommand{\titleItem}[1]{\textbf{#1}}
-\newcommand{\highlight}[1]{\textsl{\textbf{#1}}}
-\newcommand{\resumeSubheading}[4]{
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
-      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
-    \end{tabular*}\vspace{-10pt}
-}
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{#1} & \textit{#2} \\
-    \end{tabular*}\vspace{-2pt}
-}
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        #1 & \textit{ #2} \\
-    \end{tabular*}\vspace{-9pt}
-}
-\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\documentclass{bernard-resume-ats}
 
 %-------------------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,20 +58,20 @@
 % ---------- EDUCATION -------------------
 \section{Education}
 \resumeSubHeadingListStart
-    \resumeSubheading{CHRIST (Deemed to be University), Bangalore}{CGPA : --}{PhD in Data Science}{December 2024 -- present}
+    \resumeSubheading{CHRIST (Deemed to be University), Bangalore}{CGPA : N/A}{PhD in Data Science}{December 2024 -- present}
     \vspace{0.5em}
     \resumeSubheading{CHRIST (Deemed to be University), Bangalore}{CGPA : 8.66}{Master of Computer Applications (MCA)}{June 2021 -- June 2023}
     \vspace{0.5em}
     \resumeSubheading{St. Xavier's College (Autonomous), Kolkata}{CGPA : 7.20}{Bachelor of Computer Science Honours}{June 2018 -- June 2021}
     \vspace{0.5em}
-    \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.12}{ISC}{June 2016 -- June 2018} 
+    \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.12}{12th Grade, ISC Board}{June 2016 -- June 2018} 
     \vspace{0.5em}
-    \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.64}{ICSE}{June 2004 -- June 2016}
+    \resumeSubheading{Auxilium Convent School, Barasat}{CGPA : 7.64}{10th Grade, ICSE Board}{June 2004 -- June 2016}
 \resumeSubHeadingListEnd
 \vspace{-8pt}
 
 % ---------- PROJECTS --------------------
-
+\newpage
 \subfile{sections/projects/data-science-projects.tex}
 % \subfile{sections/projects/fullstack-webdev-projects.tex}
 % \subfile{sections/projects/devops-projects.tex}
